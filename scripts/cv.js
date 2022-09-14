@@ -192,7 +192,6 @@ $( document ).ready(function(){
      */
     var isContactOpen = false,
         isContactAnimating = false,
-        contactOpenClass = 'cv-contact--open',
         $contactWrap = $('.cv-contact'),
         $contactMorph = $('.cv-contact-morph'),
         $contactMorphSvg = $contactMorph.find('>svg')
