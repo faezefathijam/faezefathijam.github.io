@@ -10,7 +10,7 @@
 
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 530px) {
   .flex_row_parrent {
     display: flex;
     flex-direction: row;
@@ -20,18 +20,26 @@
     display: flex;
     flex-direction: row;
   }
-  
+
   .icon_pos {
     position: relative;
     top: 0.5rem;
     right: 0.2rem;
   }
-  
+
   .space_left {
     position: relative;
     left: 3rem;
   }
+
+  p,
+  div,
+  span {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+  }
 }
+
 @media screen and (max-width: 500px) {
   .flex_row_parrent {
     display: flex;
@@ -42,16 +50,17 @@
     display: flex;
     flex-direction: row;
   }
-  
+
   .icon_pos {
     position: relative;
     top: 0.5rem;
     right: 0.2rem;
   }
-  
+
   .space_left {
     position: relative;
   }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -65,13 +74,13 @@
     display: flex;
     flex-direction: row;
   }
-  
+
   .icon_pos {
     position: relative;
     top: 0.5rem;
     right: 0.2rem;
   }
-  
+
   .space_left {
     position: relative;
   }
@@ -256,11 +265,6 @@ you can use the generic selector below, but it's slower:
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-}
-
-p, div, span {
-  text-align: justify !important ;
-  text-justify: inter-word !important ;
 }
 
 .icon-user-female:before {
