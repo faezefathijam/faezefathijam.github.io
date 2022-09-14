@@ -8,9 +8,11 @@
   font-style: normal;
 }
 
+h2 {
+  text-align: left !important;
+}
 
-
-@media screen and (min-width: 530px) {
+@media screen and (min-width: 500px) {
   .flex_row_parrent {
     display: flex;
     flex-direction: row;
