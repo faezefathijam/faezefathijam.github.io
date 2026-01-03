@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Faeze (Fae) Fathijam | Transportation Engineering PhD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --border: rgba(148,163,184,0.25);
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background: radial-gradient(circle at top, rgba(56,189,248,0.12), transparent 50%), var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(15,23,42,0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0.6rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-name {
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      margin-left: 0.6rem;
+      font-size: 0.82rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+    }
+
+    .nav-links a:hover {
+      background: rgba(56,189,248,0.15);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 1.6rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: "DM Sans", sans-serif;
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    h2 {
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    h3 {
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+
+    ul {
+      margin-left: 1.2rem;
+      margin-top: 0.4rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin: 2rem 0 1rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(56,189,248,0.12);
+      color: var(--accent);
+      font-size: 0.7rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      margin-right: 0.3rem;
+      margin-top: 0.3rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-name">Faeze Fathijam</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section>
+  <div class="card">
+    <h1>Faeze (Fae) Fathijam</h1>
+    <div class="meta">
+      Ph.D. Student, Transportation Engineering · Penn State<br>
+      State College, PA · <a href="mailto:fkf5073@psu.edu">fkf5073@psu.edu</a> · +1 (814) 769 0441
+    </div>
+    <p>
+      Ph.D. student in Transportation Engineering with a minor in Computational Science, focusing on
+      lane-level traffic state prediction and data-driven transportation systems using machine learning
+      and deep learning methods.
+    </p>
+  </div>
+</section>
+
+<section id="research">
+  <div class="card">
+    <h2>Research Experience</h2>
+
+    <h3>Lane-Level Traffic Forecasting with Graph-based Deep Learning</h3>
+    <div class="meta">Pennsylvania State University · 2024 – 2025</div>
+    <ul>
+      <li>Developed LSTM, CNN-LSTM, and Graph Neural Network models on PeMS lane-level data.</li>
+      <li>Jointly forecasted flow, speed, and occupancy with strong performance in merge areas.</li>
+    </ul>
+
+    <h3>Machine Learning for Mixed Car–Bike Traffic Prediction</h3>
+    <div class="meta">Pennsylvania State University · 2023 – 2024</div>
+    <ul>
+      <li>Built ML models on synthetic traffic data to analyze vehicle–bicycle interactions.</li>
+      <li>Assessed impacts on flow, occupancy, and safety.</li>
+    </ul>
+
+    <h3>Railway Track Degradation Prediction</h3>
+    <div class="meta">Sharif University of Technology · 2019 – 2022</div>
+    <ul>
+      <li>Applied CNN, LSTM, and CNN-LSTM to 14,000 km of railway geometry data.</li>
+      <li>Optimized sequences and evaluated models using MSE and R².</li>
+    </ul>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="card">
+    <h2>Publications</h2>
+    <ul>
+      <li>Fathijam, F., Guler, S.I., <em>TRB 105th Annual Meeting</em>, 2026.</li>
+      <li>Fathijam, F., Guler, S.I., <em>TRB 105th Annual Meeting</em>, 2026.</li>
+      <li>Fathijam, F., Shafahi, Y., <em>Railway Technology Conference</em>, 2022.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="teaching">
+  <div class="card">
+    <h2>Teaching Experience</h2>
+    <ul>
+      <li>Teaching Assistant, CE 310 Surveying — Penn State (2025–Present)</li>
+      <li>Teaching Assistant, CE 321 Highway Engineering — Penn State (2024)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="card">
+    <h2>Professional Experience</h2>
+    <ul>
+      <li>Steel Detailer — Batab Sanat Paydar (2016–2018)</li>
+      <li>Teacher & Educational Counselor — Tehran (2014)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="education">
+  <div class="card">
+    <h2>Education</h2>
+    <ul>
+      <li>Ph.D. Transportation Engineering — Penn State (GPA 3.89/4)</li>
+      <li>M.Sc. Transportation Engineering — Sharif University (GPA 3.37/4)</li>
+      <li>B.Sc. Civil Engineering — Malayer University</li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="card">
+    <h2>Skills</h2>
+    <div>
+      <span class="tag">Python</span>
+      <span class="tag">R</span>
+      <span class="tag">MATLAB</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Deep Learning</span>
+      <span class="tag">Time Series</span>
+      <span class="tag">Spatial Analysis</span>
+      <span class="tag">Traffic Simulation</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:fkf5073@psu.edu">fkf5073@psu.edu</a><br>
+      LinkedIn: <a href="https://linkedin.com/in/faeze-fathi-jam" target="_blank">faeze-fathi-jam</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Faeze (Fae) Fathijam
+</footer>
+
+</body>
+</html>
