@@ -77,23 +77,40 @@
       padding: 0 1rem;
     }
 
-    .hero-card {
-      display: grid;
-      grid-template-columns: 230px 1fr;
-      gap: 2.2rem;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2.2rem;
-      box-shadow: 0 25px 45px rgba(0,0,0,0.4);
-    }
+   .hero-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
-    .hero-photo {
-      width: 100%;
-      border-radius: 14px;
-      object-fit: cover;
-      box-shadow: 0 14px 30px rgba(0,0,0,0.5);
-    }
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.8rem 2.2rem;
+  box-shadow: 0 25px 45px rgba(0,0,0,0.4);
+}
+
+
+  .hero-photo {
+  width: 260px;
+  height: 260px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 16px 36px rgba(0,0,0,0.55);
+  margin-bottom: 1.4rem;
+}
+
+.hero-text {
+  max-width: 720px;
+}
+
+.hero-text h1 {
+  margin-top: 0.3rem;
+}
+
+.hero-links {
+  justify-content: center;
+}
 
     .hero-text h1 {
       font-family: "DM Sans", sans-serif;
