@@ -8,6 +8,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Sans:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
+  .hero-links{
+  display:flex;
+  justify-content:center;
+  gap:.7rem;
+  flex-wrap:wrap;
+  margin-top:1.2rem;
+}
+
+.btn{
+  padding:.5rem 1.15rem;
+  border-radius:999px;
+  font-size:.9rem;
+  border:1px solid rgba(56,189,248,.45);
+  background:rgba(15,23,42,.55);
+  color:var(--text);
+  text-decoration:none;
+  transition:box-shadow .25s ease, transform .15s ease;
+}
+
+.btn:hover{
+  box-shadow:0 0 18px rgba(56,189,248,.25);
+  transform:translateY(-1px);
+}
+
+.btn.primary{
+  background:linear-gradient(135deg, rgba(56,189,248,.95), rgba(34,197,94,.9));
+  border:1px solid transparent;
+  color:#041014;
+}
+
 :root{
   --bg:#0b1220;
   --card:#0f172a;
